@@ -5,43 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenger - Alura</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="reset.css">
     <script src="cjs/index.js" defer></script>
 </head>
 
 <body>
+    
+    <header class="logo">
+        <img src="img/Vector.png" alt="Logo da Alura">
+    </header>
+    
     <main>
-        <div class="logo">
-            <img src="img/Vector.png" alt="Logo da Alura">
-        </div>
         
-        <div class="retangulo">
-        </div>
-        
-        <div class="imagem">
-           <img src="img/High quality products 1 1.png" alt="Garoto com uma Lupa"> 
-        </div>
-       
-        <div class="frame5">
-             <p class="text1">Nenhuma mensagem encontrada</p>
-            <p class="text2">Digite um texto que você deseja criptografar ou descriptografar.</p>       
-        </div>
-       
-        <div class="frame1">
-            <img src="img/bi_exclamation-circle-fill.png" alt="">
-            <p>Apenas letras minúsculas e sem acento</p>
-        </div>
-       
-        <div class="digitarText">
-            <input class="editInput" id= "input"  placeholder="Digite seu texto"></input>
-        </div>
-        
-        <div class="frame3">
-            <button id= "button1" class="botaoCriptografar"><p class="textCript">Criptografar</p></button>
-            <button id="button2" class="botaoDescriptografar"><p class="textDescript">Descriptografar</p></button>
-        </div>
+        <section class="textArea">
+            
+            <textarea class="textDigitado" placeholder="Digite o seu texto" autofocus spellcheck="false"></textarea> 
+            
+            <div class="regras">
+                <img src="img/bi_exclamation-circle-fill.png" alt="">
+                <p>Apenas letras minúsculas e sem acento</p>
+            </div>
+
+            <div class="botoes">
+                <button onclick="btnEncriptar()" class="btnCriptografar">Criptografar</button>
+                <button onclick="btnDesencriptar()"class="btnDesencriptografar">Descriptografar</button>
+            </div>
+
+        </section>
+
+        <section class="textMensagem">
+            
+            <textarea class="textCodigo" id="textCodigo" cols="30" rows="10"></textarea>
+            <div class="boneco">
+                <img src="img/boneco.png" alt="boneco com a lupa"> 
+                <h1>Nenhuma Mensagem Encontrada</h1>
+                <h2 id="bonecoTexto">Digite a mensagem que você deseja criptografar ou descriptografar.</h2>
+            </div>
+            
+            <div class="botaoCopiar">
+                <button class="btnCopiar" onclick = "btnCopiar()">Copiar</button>
+            </div> 
+
+        </section>                             
     </main>
+    
+    <footer class="rodape">
+        <p class="direitosAutorais">©Copyright #Chageller Alura - Todos os direitos reservados - Programador Marconi Souza</p>
+        <a href="https://github.com/mjos2/Challenger"></a><img class="imagemRodape" src="img/gitHub.png" alt="imagem do GitHub">
+        
+    </footer>
 </body>
 
 </html>
