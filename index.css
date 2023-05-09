@@ -86,6 +86,16 @@ top: 885px;
     font-size: 16px;
 }
 
+.btnCriptografar:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btnCriptografar:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .btnDesencriptografar{
     box-sizing: border-box;
     display: flex;
@@ -104,6 +114,16 @@ top: 885px;
     font-size: 16px;
     color: #0A3871;
     cursor: pointer;
+}
+
+.btnDesencriptografar:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btnDesencriptografar:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .botaoCopiar{
@@ -141,6 +161,16 @@ top: 885px;
     color: #0A3871;
     cursor: pointer;
     display: none;
+}
+
+.btnCopiar:hover{
+    transition: 1s ease-in-out;
+    background: #4F95DA;
+}
+
+.btnCopiar:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .textCodigo{
