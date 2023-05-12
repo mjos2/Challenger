@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Challenger - Alura</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="reset.css">
@@ -17,10 +17,8 @@
     </header>
     
     <main>
-        
-        <section class="textArea">
-            
-            <textarea class="textDigitado" placeholder="Digite o seu texto" autofocus spellcheck="false"></textarea> 
+        <section>
+            <textarea class="textDigitado" placeholder="Digite o seu texto" autofocus spellcheck="false" ></textarea> 
             
             <div class="regras">
                 <img src="img/bi_exclamation-circle-fill.png" alt="">
@@ -34,25 +32,26 @@
 
         </section>
 
-        <section class="textMensagem">
+        <section>
             
-            <textarea class="textCodigo" id="textCodigo" cols="30" rows="10"></textarea>
+            <textarea class="textCodigo" id="textCodigo"></textarea>
+           
+            <div class="botaoCopiar">
+            <button class="btnCopiar" onclick = "btnCopiar()">Copiar</button>
+            </div>
+           
             <div class="boneco">
-                <img src="img/boneco.png" alt="boneco com a lupa"> 
+                <img class="imagem-boneco" src="img/boneco.png" alt="boneco com a lupa"> 
                 <h1>Nenhuma Mensagem Encontrada</h1>
                 <h2 id="bonecoTexto">Digite a mensagem que você deseja criptografar ou descriptografar.</h2>
             </div>
-            
-            <div class="botaoCopiar">
-                <button class="btnCopiar" onclick = "btnCopiar()">Copiar</button>
-            </div> 
 
         </section>                             
     </main>
     
     <footer class="rodape">
         <p class="direitosAutorais">©Copyright #Chageller Alura - Todos os direitos reservados - Programador Marconi Souza</p>
-        <a href="https://github.com/mjos2/Challenger"></a><img class="imagemRodape" src="img/gitHub.png" alt="imagem do GitHub">
+        <a href="https://github.com/mjos2/Challenger"><img class="imagemRodape" src="img/gitHub.png" alt="imagem do GitHub"></a>
         
     </footer>
 </body>

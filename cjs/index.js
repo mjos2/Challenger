@@ -3,6 +3,18 @@ const textArea = document.querySelector(".textDigitado");
 const mensagem = document.querySelector(".textCodigo");
 const boneco = document.querySelector(".boneco");
 const botaoCopiar = document.querySelector(".btnCopiar");
+const entrada = textArea.addEventListener("input", erro)
+
+
+
+function erro(event){
+  const regex= /^[a-zA-Z]+$/
+  const textodatextarea = event.target.value
+  if(!regex.test(textodatextarea)){
+    event.target.value = textodatextarea.replace(/[^a-z A-Z]+/g,"")
+    alert("Digite um valor válido !");
+  }
+}
 
 
 function btnCopiar(){
@@ -53,3 +65,7 @@ function desencriptar(stringDesencriptada){
   return stringDesencriptada;
 }
 
+document.addEventListener("DOMContentLoaded", function(){
+  var txtarea = document.querySelector(".textCodigo");
+  txtarea.style.height = txtarea.scrollHeight+"px";
+});
